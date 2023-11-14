@@ -1,0 +1,75 @@
+:root{
+    --night:#090C08;
+    --erieBlack:#19191C;
+    --grey:#28262F;
+    --scarlet:#FF3213;
+    --redOrange:#DC4013;
+    --Pblue:#100A85;
+    --Rblue:#262090;
+    --AshGrey:#B9C6AE;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    box-sizing: border-box;
+    background:linear-gradient(var(--night),var(--erieBlack));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:750px)
+{
+    .circle1{
+        padding: 70px;
+        border-radius: 100%;
+        background:linear-gradient(var(--scarlet),var(--redOrange));
+        z-index:-2;
+        position: absolute;
+        top: 0px;
+        right: 70px;
+    }
+    .circle2{
+        padding: 70px;
+        border-radius: 100%;
+        background:linear-gradient(var(--Pblue),var(--Rblue));
+        z-index:-2;
+        position: absolute;
+        bottom: 0px;
+        left: 70px;
+    }
+    .container{
+        border: rgb(245, 245, 245,0.05) 3px solid;
+        backdrop-filter: blur(30px);
+        width: 60%;
+        height: 80%;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    h1{
+        text-align: center;
+        color:lightgoldenrodyellow;
+    }
+    .containerEmail,
+    .containerPass
+    {
+        color: aliceblue;
+    }
+    input[type="email"],
+    input[type="password"]:focus{
+        outline: none;
+        border: nonev;
+    }
+    .BoxGoogle,
+    .BoxFacebook {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+    }
+}
