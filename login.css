@@ -18,6 +18,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width:750px)
@@ -51,6 +52,7 @@ body{
         flex-direction: column;
     }
     
+
     h1{
         text-align: center;
         color:lightgoldenrodyellow;
@@ -60,16 +62,69 @@ body{
     {
         color: aliceblue;
     }
+    
+    input[type="email"],
+    input[type="password"]{
+        margin-top: 5px;
+        margin-bottom: 3px;
+        padding: 8px;
+        font-size: 15px;
+    }
     input[type="email"],
     input[type="password"]:focus{
         outline: none;
-        border: nonev;
+    }
+    .box{
+        display: flex;
     }
     .BoxGoogle,
     .BoxFacebook {
         display: flex;
         align-items: center;
         justify-content: center;
+        color: rgb(255, 255, 255);
+        border: solid ;
+        background-color: transparent;
+        width: 120px;
+        cursor: pointer;
+    }
+    .login{
+        padding: 15px;
+        width: 100px;
+        cursor: pointer;
+        margin: 10px;
+        background:#19191C;
+        text-decoration: none;
+        border: none;
+        text-align: center;
+        color: var(--AshGrey);
+        transition: 0.3s;
+        border-radius: 7px;
+    }
+
+    .login:hover{
+        background-color:#28262F;
         color: aliceblue;
+    }
+    
+    .box{
+        margin-top:10px;
+    }
+    .BoxGoogle{
+        margin-right: 5px;
+    }
+
+    .gg-google{
+        margin-right: 8px;
+    }
+
+    .BoxGoogle:hover{
+        color:#FF3213;
+    }
+    .BoxFacebook:hover{
+        color: #262090;
+    }
+    .gg-facebook{
+        margin-right: 8px;
     }
 }
